@@ -1,89 +1,172 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Husain It Is</title>
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
     <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        ::-moz-selection {
+            color: black;
+            background: white;
+        }
+
+        ::selection {
+            color: black;
+            background: white;
+        }
+
         html,
         body {
             position: relative;
             height: 100%;
-        }
-
-        body {
             margin: 0;
-            text-align: center;
-            font-family: 'Gloria Hallelujah', cursive;
-            color: #271e01;
-            background: #ffd74d;
-            display: -webkit-flex;
+        }
+
+        .hii-wrapper {
+            position: relative;
+            z-index: 1;
+            color: #EAEAEA;
+            background: black;
+            height: 100vh;
+            width: 100vw;
             display: flex;
-            align-items: center;
+            flex-flow: column;
+            justify-content: center;
+            line-height: 1.62;
+            text-align: center;
+            font-family: 'Cutive Mono', monospace;
+            border: 2vmin solid white;
         }
 
-        h1 {
-            width: 100%;
-            background-size: 50px 50px;
-            background-color: #ffd74d;
-            background-image: -webkit-linear-gradient(-45deg, #271e01 25%, transparent 25%,
-            transparent 50%, #271e01 50%, #271e01 75%,
-            transparent 75%, transparent);
-            background-image: -moz-linear-gradient(-45deg, #271e01 25%, transparent 25%,
-            transparent 50%, #271e01 50%, #271e01 75%,
-            transparent 75%, transparent);
-            background-image: linear-gradient(135deg, #271e01 25%, transparent 25%,
-            transparent 50%, #271e01 50%, #271e01 75%,
-            transparent 75%, transparent);
-            -pie-background: linear-gradient(135deg, #271e01 25%, transparent 25%,
-            transparent 50%, #271e01 50%, #271e01 75%,
-            transparent 75%, transparent) 0 0 / 50px 50px, #ffd74d;
-            behavior: url(/pie/PIE.htc);
-            font-size: 5.5vw;
+            .hii-wrapper::after {
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                z-index: -1;
+                opacity: 0.03;
+                background: url(husainitis.svg) left center no-repeat;
+            }
+
+        .hii-logo {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 112px;
+            background: url(husainitis.svg) center no-repeat;
         }
 
-        h1 span {
-            display: inline-block;
-            padding: 0 15px;
-            background: #ffd74d;
+            .hii-logo path {
+                fill: white;
+            }
+
+        .hii-title {
+            margin: .25em auto .125em;
+            font-size: 8vmin;
+            font-weight: normal;
         }
 
-        h1 span:before,
-        h1 span:after {
-            content: '<';
-            font-size: 1.5em;
+        .hii-subtitle,
+        .hii-location {
+            margin: .125em auto 0;
+            font-size: 6vmin;
+            font-weight: normal;
         }
 
-        h1 span:after {
-            content: '/>';
+        .hii-list-social {
+            display: block;
+            list-style: none;
+            margin: 0 auto 0;
+            padding: 0;
+            font-size: 20px;
         }
+
+            .hii-list-social > li {
+                display: inline-block;
+                margin: 10px 10px 0 0;
+            }
+
+                .hii-list-social > li:last-child {
+                    margin-right: 0;
+                }
+
+                .hii-list-social > li > a {
+                    display: block;
+                    border: 2px solid #000;
+                    background: #111;
+                    color: white;
+                    text-decoration: none;
+                    padding: 4px 16px;
+                    border-radius: 25px;
+                    transition: all .3s ease-in;
+                }
+
+                    .hii-list-social > li > a:hover,
+                    .hii-list-social > li > a:focus {
+                        color: #aeaeae;
+                        border: 2px solid #333;
+                    }
 
         @media (min-width: 768px) {
-            h1 {
-                font-size: 5.5vw;
+            .hii-subtitle,
+            .hii-location {
+                font-size: 4vmin;
             }
         }
     </style>
-
 </head>
 
 <body>
-	<!--
-			__  __                 _       ______  ____    
-		   / / / /_  ___________ _(_)___  /  _/ /_/  _/____
-		  / /_/ / / / / ___/ __ `/ / __ \ / // __// // ___/
-		 / __  / /_/ (__  ) /_/ / / / / // // /__/ /(__  ) 
-		/_/ /_/\__,_/____/\__,_/_/_/ /_/___/\__/___/____/
-	-->
-    <h1>
-        <span> Site Under Construction </span>
-    </h1>
-
-    <script>
-    console.log("%cGotcha! you peeping Tom ;)", "color: #E93737; font-family: sans-serif; font-size: 4.5em; font-weight: bolder;");
-    </script>
+    <!--
+            __  __                 _       ______  ____
+           / / / /_  ___________ _(_)___  /  _/ /_/  _/____
+          / /_/ / / / / ___/ __ `/ / __ \ / // __// // ___/
+         / __  / /_/ (__  ) /_/ / / / / // // /__/ /(__  )
+        /_/ /_/\__,_/____/\__,_/_/_/ /_/___/\__/___/____/
+    -->
+    <div class="hii-wrapper">
+        <div class="hii-logo"></div>
+        <h1 class="hii-title">Jafar Husain</h1>
+        <h2 class="hii-subtitle">Front End Developer</h2>
+        <p class="hii-location">Chennai - India</p>
+        <ul class="hii-list-social">
+            <li>
+                <a target="_blank" href="https://github.com/HusainItIs">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://codepen.io/HusainItIs/">codepen</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://linkedin.com/in/husainitis/HusainItIs">linkedin</a>
+            </li>
+        </ul>
+    </div>
 </body>
 
 </html>
